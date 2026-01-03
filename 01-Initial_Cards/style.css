@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+
+
+.container {
+    display: flex;
+    width: 60vw;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel h3 {
+    font-family: 'Muli', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    /* transition sur l'opacité, ça prend 0.3s, progressif, délai de 0.4s avant effet */
+    transition: opacity 0.3s ease-in 0.4s; 
+}
+
+@media(max-width: 480px) {
+    /* Redéfinit la largeur du containeur à 100vw */
+    .container {
+        width: 100vw;
+    }
+
+    /* Cache la 4ème et 5ème image */
+    .panel:nth-of-type(4),.panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
+
