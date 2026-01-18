@@ -15,7 +15,9 @@ projects = {
     "14 - Animated Navigation": "14-Animated_Navigation",
     "15 - Increment Counter": "15-Increment_Counter",
     "16 - Drink Water": "16-Drink_Water",
-    "17 - Movie App": "17-Movie_App"
+    "17 - Movie App": "17-Movie_App",
+    "18 - Background Slider": "18-Background_Slider",
+    "19 - Theme Clock": "19-Theme_Clock",
 }
 
 // Create menus

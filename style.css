@@ -12,13 +12,14 @@ body {
 
 .menu {
     position: relative;
-    padding: 20px;
+    padding: 30px 15px;
     min-width: 250px;
     width: 20vw;
     height: 100vh;
     background-image: linear-gradient(200deg, #20232a, #000);
     z-index: 1;
     box-shadow: 3px 0px 0px 0px rgb(0 0 0 / 0.2);
+    overflow-y: scroll;
 }
 
 .menu h1 {
@@ -52,14 +53,15 @@ body {
 .menu__footer {
     position: absolute;
     cursor: pointer;
+    top: 0;
     left: 0;
-    bottom: 0;
     color: white;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
+    z-index: 1;
 }
 
 .menu__footer p {
